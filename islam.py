@@ -13,6 +13,11 @@ st.set_page_config(
 
 # Title and description with blue font
 st.markdown("<h1 style='text-align: center; color: blue;'>Welcome To Shoaib Afridi Website</h1>", unsafe_allow_html=True)
+
+# Show the image
+st.image('images/Shoaib.jpg', caption='Welcome to Shoaib Afridi Website', use_container_width=True)
+
+# Title and description for stock market dashboard
 st.title("📈 Real-Time Stock Market Dashboard")
 st.markdown("""
     This dashboard provides real-time stock market data and analysis.
@@ -98,4 +103,4 @@ try:
     
 except Exception as e:
     st.error(f"Error loading data for {ticker}. Please check the stock symbol and try again.")
-    st.error(str(e))
+    st.error(str(e)) 
